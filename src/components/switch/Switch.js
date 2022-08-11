@@ -7,6 +7,7 @@ import {
 } from './Switch.elements';
 
 const Switch = (props) => {
+
     const { theme, setTheme } = props;
     const [position, setPosition] = useState(false);
 
@@ -18,7 +19,7 @@ const Switch = (props) => {
             setTheme('light');
             changePosition();
         }
-    }
+    };
 
     const changePosition = () => {
         setPosition(!position);

@@ -8,6 +8,7 @@
 .pagination-btn {
   border-radius: 50%;
   border-color: white;
+  color: black;
   margin: 5px;
   padding: inherit;
 }

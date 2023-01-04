@@ -7,6 +7,7 @@ import Navbar from './components/NavBar';
 import Pokedex from './components/Pokedex';
 import Searchbar from './components/SearchBar';
 import Themes from './components/theme/Themes';
+import './styles/App.css'
 
 const localStorageKey = "favorite_pokemon";
 
@@ -25,14 +26,14 @@ function App() {
   const fetchPokemons = async () => {
     try{
       setLoading(true);
-      const data = await getPokemons(15, 15 * page);
+      const data = await getPokemons(12, 12 * page);
       const promises = data.results.map(async (pokemon) => {
         return await getPokemonData(pokemon.url);
       })
       const results = await Promise.all(promises);
       setPokemons(results);
       setLoading(false);
-      setTotal(Math.ceil(data.count / 15));
+      setTotal(Math.ceil(data.count / 12));
       setNotFound(false);
     } catch(error) {}
   };

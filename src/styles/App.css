@@ -1,0 +1,10 @@
+.App {
+   min-height: 100vh;
+}
+
+.not-found-text {
+   color: white;
+   font-size: 35px;
+   font-weight: 700;
+   margin: 50px;
+}

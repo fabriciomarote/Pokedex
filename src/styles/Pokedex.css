@@ -16,6 +16,7 @@
   .pokedex-text-loading {
     display: flex;
     justify-content: space-around;
+    font-size: 50px;
   }
   
   #pokedex-text {
@@ -24,7 +25,7 @@
   
   @media (min-width: 1200px) {
     .pokedex-grid {
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
     }
   }
   

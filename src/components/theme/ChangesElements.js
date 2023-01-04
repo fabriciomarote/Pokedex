@@ -6,6 +6,11 @@ export const ContainerGeneral = styled.div`
 
 export const NavBarContainer = styled.div`
     color: ${({ theme }) => theme.text};
+
+    .favorites {
+        background-color: ${({ theme }) => theme.button};
+        color: ${({ theme }) => theme.textOpposite};
+    }
 `;
 
 export const SearchBarButton = styled.div`
@@ -29,8 +34,13 @@ export const PaginationContainer = styled.div`
 
 export const PokemonContainer = styled.div`
     background-color: ${({ theme }) => theme.pokemonBGC};
+    
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
 
-    h3, p {
+    p, .card-top {
         color: ${({ theme }) => theme.text};
     }
 `;

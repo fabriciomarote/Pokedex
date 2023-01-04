@@ -18,8 +18,8 @@ export const SwitchWrapper = styled.div`
 
 export const SwitchBGC = styled.div`
   position: relative;
-  width: 45px;
-  height: 25px;
+  width: 50px;
+  height: 30px;
   border-radius: 30px;
   background-color: ${({ theme }) => theme.toggle};
   transition: 1s all ease-in;
@@ -30,11 +30,11 @@ export const ButtonSwitch = styled.button`
   cursor: pointer;
   bottom: 5px;
   left: ${({ position }) => position ? '25px' : '5px'};
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
   border: none;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: ${({ theme }) => theme.buttonSwitch};
   transition: 0.4s all ease-in;
   outline: none;
 `;

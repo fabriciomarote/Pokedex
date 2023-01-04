@@ -1,4 +1,4 @@
-.container {
+  .container {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -6,8 +6,8 @@
     padding: 15px;
   }
   
-  .navbar-image {
-    width: 160px;
+  .logo-image {
+    width: 250px;
   }
 
   .fila {
@@ -22,3 +22,18 @@
     margin-right: 10px;
     margin-top: 3px;
   }
+
+  .favorites {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 30px;
+    border-radius: 20px;
+  }
+
+  @media (max-width: 767px) {
+    .logo-image {
+      width: 100px;
+    }
+}

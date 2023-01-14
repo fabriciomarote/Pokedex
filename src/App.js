@@ -26,14 +26,14 @@ function App() {
   const fetchPokemons = async () => {
     try{
       setLoading(true);
-      const data = await getPokemons(12, 12 * page);
+      const data = await getPokemons(8, 8 * page);
       const promises = data.results.map(async (pokemon) => {
         return await getPokemonData(pokemon.url);
       })
       const results = await Promise.all(promises);
       setPokemons(results);
       setLoading(false);
-      setTotal(Math.ceil(data.count / 12));
+      setTotal(Math.ceil(data.count / 8));
       setNotFound(false);
     } catch(error) {}
   };

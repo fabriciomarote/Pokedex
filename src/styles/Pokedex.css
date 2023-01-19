@@ -1,3 +1,7 @@
+.pokedex-container {
+  width: 100vw;
+}
+
 .header {
     display: flex;
     flex-direction: row;
@@ -22,10 +26,16 @@
   #pokedex-text {
     margin-right: 50px;
   }
+
+  @media (max-width: 1980px) and (orientation: landscape) {
+    .pokedex-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
   
   @media (min-width: 1200px) {
     .pokedex-grid {
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(3, 1fr);
     }
   }
   

@@ -1,5 +1,5 @@
 .App {
-   height: 82.3vh;
+   min-height: 100vh;
 }
 
 .not-found-text {

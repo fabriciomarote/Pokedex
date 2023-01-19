@@ -19,7 +19,7 @@ const Pokedex = (props) => {
 
     return (
         <PokedexContainer>
-            <div>
+            <div className='pokedex-container'>
                 <div className="header">
                     <div className="col-lg-10 col-md-10 col-sm-8 col-xs-12" >
                         <h1>Pokedex</h1>

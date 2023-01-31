@@ -5,6 +5,7 @@ export const ContainerGeneral = styled.div`
 `;
 
 export const NavBarContainer = styled.div`
+    background-color: ${({ theme }) => theme.bgc};
     color: ${({ theme }) => theme.text};
 
     .favorites {
@@ -21,26 +22,33 @@ export const SearchBarButton = styled.div`
 `;
 
 export const PokedexContainer = styled.div`
-    h1, h6 {
+    .title-pokedex, .pokedex-text-loading {
         color: ${({ theme }) => theme.text};
     }
 `;
 
 export const PaginationContainer = styled.div`
-    h5 {
+    .pagination {
         color: ${({ theme }) => theme.text};
     }
 `;
 
 export const PokemonContainer = styled.div`
-    background-color: ${({ theme }) => theme.pokemonBGC};
-    
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
+    .pokemon-card {
+        background-color: ${({ theme }) => theme.pokemonBGC};
+    }
+    .pokemon-card:hover {
+        background-color: ${({ theme }) => theme.hover};
+    }
 
-    p, .card-top {
+    p, .card-top { 
         color: ${({ theme }) => theme.text};
     }
+    .pokemon-heart-btn {
+        border-color: black;
+    }
+    .pokemon-type-text {
+        background-color: rgb(10, 14, 13);
+        color: white;
+  }
 `;

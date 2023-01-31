@@ -1,13 +1,12 @@
   .container {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
     align-items: center;
-    padding: 15px;
   }
   
   .logo-image {
-    width: 250px;
+    width: 220px;
+    padding: 10px;
   }
 
   .fila {
@@ -25,15 +24,27 @@
 
   .favorites {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 55px;
+    width: 17%;
     height: 30px;
     border-radius: 20px;
+    cursor: pointer;
+  }
+
+  .icon-favorites {
+    color: red;
+    margin-right: 10px;
   }
 
   @media (min-width: 1200px) {
-    
+    .container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      min-width: 100%;
+    }
   }
   
   @media (max-width: 1199px) and (min-width: 992px) {
@@ -42,8 +53,7 @@
       flex-direction: row;
       justify-content: space-evenly;
       align-items: center;
-      padding: 15px;
-      width: 95vw;
+      min-width: 100%;
     }
   }
   

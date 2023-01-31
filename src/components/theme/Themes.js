@@ -13,7 +13,7 @@ const DarkTheme = {
     text: "#FFFFFF",
     toggle: "#757575",
     buttonSwitch:"#B00000", 
-    hover: "#88D4FF",
+    hover: "#9C9A9A",
     bgc: "#000000",
     pokemonBGC: "#5E5F5E",
     button: '#9C9A9A',

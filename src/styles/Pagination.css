@@ -1,14 +1,27 @@
 .pagination {
   display: flex;
   flex-direction: row;
+  justify-content: right;
   align-items: center;
-  padding: 0px;
+  padding-right: 15px;
   width: 100%;
-  font-size: 20px;
 }
 
 .pagination-btn {
-  margin: 10px;
-  border-width: .5px;
+  margin: 0px;
+  border: none;
   cursor: pointer;
+  color: var(--toggle);
+  background-color: var(--background);
+}
+
+.paginatio-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text);
+  height: 100%;
+  padding-top: 15px;
 }

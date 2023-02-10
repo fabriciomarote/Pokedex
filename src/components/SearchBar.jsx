@@ -18,20 +18,15 @@ const SearchBar = (props) => {
         onSearch(search);
     };
 
-    return(
-        <SearchBarButton>
-            <div className="searchbar-container">
-                
-                    <div className="searchbar">
-                        <input placeholder="Buscar pokemon..." onChange={onChange}/>
-                    </div>
-                   
-                    <div className="searchbar-btn">
-                        <button onClick={onClick}>Buscar</button>
-                    </div>
-                
+    return (
+        <div className="searchbar-container">
+            <div className="searchbar">
+                <input placeholder="Buscar pokemon..." onChange={onChange}/>
             </div>
-        </SearchBarButton>
+            <div className="searchbar-btn">
+                <button onClick={onClick}>Buscar</button>
+            </div>
+        </div>
     );
 };
 

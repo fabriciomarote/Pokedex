@@ -21,7 +21,7 @@ export const SwitchBGC = styled.div`
   width: 50px;
   height: 30px;
   border-radius: 30px;
-  background-color: ${({ theme }) => theme.toggle};
+  background-color: var(--toggle);
   transition: 1s all ease-in;
 `;
 
@@ -34,7 +34,7 @@ export const ButtonSwitch = styled.button`
   height: 20px;
   border: none;
   border-radius: 50%;
-  background-color: ${({ theme }) => theme.buttonSwitch};
+  background-color: var(--buttonSwitch);
   transition: 0.4s all ease-in;
   outline: none;
 `;

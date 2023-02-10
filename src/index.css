@@ -11,3 +11,26 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+:root {
+  --background: linear-gradient(90deg, rgba(191,0,0,1) 3%, rgba(226,14,14,1) 33%, rgba(207,12,12,1) 65%, rgba(193,0,0,1) 100%);
+  --text: #000000;
+  --toggle: #000000;
+  --buttonSwitch: #FFFFFF; 
+  --hover: #fee4e4;
+  --pokemonBGC: #dac5c5f8;
+  --pokemonImg: #b4b3b3f8;
+  --button: #181818;
+  --textOpposite: #FFFFFF;
+}
+[data-theme='dark'] {
+  --background: #000000;
+  --text: #ffffff;
+  --toggle: #757575;
+  --buttonSwitch:#B00000;
+  --hover: #9C9A9A;
+  --pokemonBGC: #5E5F5E;
+  --pokemonImg: #4f4f4f;
+  --button: #9C9A9A;
+  --textOpposite: #000000;
+}

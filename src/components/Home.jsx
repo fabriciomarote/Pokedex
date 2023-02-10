@@ -1,13 +1,8 @@
 import { useState, useEffect } from 'react';
 import { getPokemonData, getPokemons, searchPokemon } from '../api';
-import { ThemeProvider } from 'styled-components';
-import { ContainerGeneral } from '../components/theme/ChangesElements';
-import Pokedex from '../components/Pokedex';
-import Searchbar from '../components/SearchBar';
-import Themes from '../components/theme/Themes';
+import Pokedex from './Pokedex.jsx';
+import Searchbar from './SearchBar.jsx';
 import '../styles/Home.css'
-
-const localStorageKey = "favorite_pokemon";
 
 const Home = ( props ) => {
 
@@ -15,7 +10,6 @@ const Home = ( props ) => {
   const [page, setPage] = useState(0);
   const [total, setTotal] = useState(0);
   const [loading, setLoading] = useState(true);
-  const [favorites, setFavorites] = useState([]);
   const [notFound, setNotFound] = useState(false);
   const [searching, setSearching] = useState(false);
   
@@ -36,27 +30,6 @@ const Home = ( props ) => {
     } catch(error) {}
   };
 
-  const updateFavoritesPokemons = (name) => {
-    const updated = [...favorites];
-    const isFavorite = updated.indexOf(name);
-    if (isFavorite >= 0) {
-      updated.splice(isFavorite, 1);
-    } else {
-      updated.push(name);
-    }
-    setFavorites(updated);
-  };
-
-  const loadFavoritePokemons = () => {
-    const pokemons =
-      JSON.parse(window.localStorage.getItem(localStorageKey)) || [];
-    setFavorites(pokemons);
-  };
-
-  useEffect(() => {
-    loadFavoritePokemons();
-  }, []);
-  
   useEffect(() => {
     if (!searching) {
       fetchPokemons();
@@ -85,10 +58,7 @@ const Home = ( props ) => {
   };
 
   return (
-      <div>
-        <ThemeProvider theme={Themes[theme]}>
-          <ContainerGeneral>  
-            <div className="home">
+        <div className="home" data-theme={theme}>
               <Searchbar onSearch={onSearch}/> 
               {notFound ? 
                 <div className="not-found-text">
@@ -105,9 +75,6 @@ const Home = ( props ) => {
                 /> 
                 }  
             </div>
-          </ContainerGeneral>
-        </ThemeProvider>
-      </div>
   );
 };
 

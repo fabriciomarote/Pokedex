@@ -19,6 +19,7 @@
     border-radius: 5px;
     border: none;
     width: 100%;
+    margin-left: 15px;
   }
   
   .searchbar input:focus {
@@ -31,8 +32,9 @@
     height: 100%;
     padding: 10px 12px;
     margin-left: 10px;
+    background-color: var(--button);
+    color: var(--textOpposite);
   }
-  
 
   @media (max-width: 767px) {
     .searchbar-container {

@@ -1,11 +1,11 @@
-import React, {useContext} from 'react';
-import { PokemonContainer } from './theme/ChangesElements';
+import React, { useContext } from 'react';
 import FavoritesContext from '../contexts/FavoritesContext';
 import '../styles/Pokemon.css';
 
-const Pokemon = (props) => {
+const Pokemon = ( props ) => {
 
-    const { pokemon } = props;
+    const { pokemon, theme } = props;
+
     const { favoritesPokemons, updateFavoritesPokemons } = useContext(FavoritesContext);
 
     const redHeart =    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" className="bi bi-heart" viewBox="0 0 16 16">
@@ -22,8 +22,7 @@ const Pokemon = (props) => {
     };
 
     return (
-        <PokemonContainer>
-            <div className="pokemon-card">
+            <div className="pokemon-card" data-theme={theme}>
                 <div className="pokemon-img-container">
                     <img src={pokemon.sprites.front_default} alt={pokemon.name} className="pokemon-img"/>               
                 </div>
@@ -52,7 +51,6 @@ const Pokemon = (props) => {
                     </div>
                 </div>
             </div>
-        </PokemonContainer>
     );
 };
 

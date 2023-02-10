@@ -1,5 +1,6 @@
 .home {
-    min-height: 78vh;
+    min-height: 86.9vh;
+    background: var(--background);
  }
  
  .not-found-text {

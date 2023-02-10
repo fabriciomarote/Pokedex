@@ -1,17 +1,18 @@
-import React from "react";
-import { NavBarContainer } from "./theme/ChangesElements";
+import React, { useContext } from "react";
 import { AiFillHeart } from "react-icons/ai";
-import Switch from "./switch/Switch";
+import FavoritesContext from '../contexts/FavoritesContext';
+import Switch from "./Switch.jsx";
 import '../styles/NavBar.css';
 
 const Navbar = (props) => {
 
     const { theme, setTheme } = props;
 
+    const { favoritesPokemons } = useContext(FavoritesContext);
+
     return (
-        <NavBarContainer>
             <nav>
-                <div className="container">
+                <div className="container" data-theme={theme}>
                     <div className="col-lg-3 col-md-3 col-sm-2 col-xs-2 fila">
                         <Switch theme= {theme} setTheme={setTheme}/>
                     </div>
@@ -20,12 +21,12 @@ const Navbar = (props) => {
                     </div>
                     <div className="col-lg-3 col-md-3 col-sm-2 col-xs-2 fila">
                         <div className="favorites">
-                            <AiFillHeart size={25} className="icon-favorites"/> {}
+                            <AiFillHeart size={25} className="icon-favorites"/> {favoritesPokemons.length}
                         </div>
                     </div>
                 </div>
             </nav>
-        </NavBarContainer>
+
     );
 };
 

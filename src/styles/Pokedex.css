@@ -26,7 +26,7 @@
     display: grid;
     gap:1rem;
     padding: 10px;
-    margin: 0px;
+    margin-top: 30px;
   }
   
   .pokedex-text-loading {
@@ -38,6 +38,10 @@
     gap:5rem;
   }
 
+  .title-pokedex, .pokedex-text-loading {
+    color: var(--text);
+}
+
   @media (max-width: 1980px) and (orientation: landscape) {
     .pokedex-grid {
       grid-template-columns: repeat(2, 1fr);
@@ -47,7 +51,6 @@
   @media (min-width: 1200px) {
     .pokedex-container {
       width: 100%;
-      min-height: 78.2vh;
     }
     .pokedex-grid {
       grid-template-columns: repeat(4, 1fr);

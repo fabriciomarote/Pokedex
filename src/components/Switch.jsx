@@ -4,7 +4,7 @@ import {
     SwitchWrapper,
     SwitchBGC,
     ButtonSwitch,
-} from './Switch.elements';
+} from './switch/Switch.elements';
 
 const Switch = (props) => {
 
@@ -26,18 +26,18 @@ const Switch = (props) => {
     };
 
     return (
-        <>
+        <div className='switch'>
             <SwitchContainer>
                 <SwitchWrapper>
                     <SwitchBGC>
-                        <ButtonSwitch 
+                        <ButtonSwitch className='button-switch'
                             onClick={ () => changeMode()}
                             position={ position } 
                         ></ButtonSwitch>
                     </SwitchBGC>
                 </SwitchWrapper>
             </SwitchContainer>
-        </>
+        </div>
     );
 };
 

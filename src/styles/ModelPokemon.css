@@ -1,7 +1,7 @@
   .pokemon-card {
     display: flex;
     border-radius: 10px;
-    padding: 5px;
+    padding: 10px;
     background-color: var(--pokemonBGC);
     color: var(--text);
   }

@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import { SearchBarButton } from './theme/ChangesElements';
 import '../styles/SearchBar.css'
 
 const SearchBar = (props) => {

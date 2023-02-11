@@ -37,6 +37,12 @@
     cursor: pointer;
     background-color: var(--toggle);
     color: var(--textOpposite);
+    text-decoration: none;
+  }
+
+  .favorites:hover {
+    text-decoration: none;
+    color: var(--textOpposite);
   }
 
   .icon-favorites {

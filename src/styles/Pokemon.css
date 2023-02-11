@@ -1,0 +1,4 @@
+.pokemon-container {
+    background: var(--background);
+    min-height: 86.9vh;
+}

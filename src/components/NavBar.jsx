@@ -20,9 +20,9 @@ const Navbar = (props) => {
                     <a href="/"><img src="https://raw.githubusercontent.com/PokeAPI/media/master/logo/pokeapi_256.png" alt="logo" className="logo-image"/></a>
                     </div>
                     <div className="col-lg-3 col-md-3 col-sm-2 col-xs-2 fila">
-                        <div className="favorites">
+                        <a href="/favorites" className="favorites">
                             <AiFillHeart size={25} className="icon-favorites"/> {favoritesPokemons.length}
-                        </div>
+                        </a>
                     </div>
                 </div>
             </nav>

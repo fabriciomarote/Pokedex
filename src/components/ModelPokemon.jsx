@@ -35,14 +35,19 @@ const ModelPokemon = ( props ) => {
                     </div>
                 </div>
                 <div className="card-bottom">
-                    <div className="pokemon-type">
-                        {pokemon.types.map((type, idx) => {
-                            return (
-                                <div key={idx} className="pokemon-type-text">
-                                    {type.type.name}
-                                </div>
-                            );
-                        })}
+                    <div className='card-info'>
+                        <div className="pokemon-type">
+                            { pokemon.types.map((type, idx) => {
+                                return (
+                                    <div key={idx} className="pokemon-type-text">
+                                        {type.type.name}
+                                    </div>
+                                );
+                            })}
+                        </div>
+                        <div className="more-info">
+                            <a href={`/pokemon/${pokemon.id}`} className="modelPokemon"><p>ver más</p></a>
+                        </div>
                     </div>
                     <button onClick={clickHeart} className="pokemon-heart-btn">
                         <div className="pokemon-favorite">

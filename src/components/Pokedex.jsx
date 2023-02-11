@@ -43,7 +43,7 @@ const Pokedex = (props) => {
                     :
                     <div className="pokedex-grid">
                         {pokemons.map((pokemon, idx) => {
-                            return <a href={`/pokemon/${pokemon.id}`} className="modelPokemon"><ModelPokemon key={pokemon.name} pokemon={pokemon} theme={theme}/></a>
+                            return <ModelPokemon key={pokemon.name} pokemon={pokemon} theme={theme}/>
                         })}
                     </div>
                 }

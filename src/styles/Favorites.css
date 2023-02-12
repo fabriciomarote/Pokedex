@@ -5,6 +5,7 @@
     background: var(--background);
     min-height: 86.9vh;
     padding: 20px;
+    margin-top: -1px;
 }
 .poke-favorites-grid {
     display: grid;
@@ -38,8 +39,12 @@
   }
   
   @media only screen and (min-width:721px) and (max-width: 1199px) {
+    .favorites-container {
+      min-height: 90vh;
+
+  }
     .poke-favorites-grid {
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
     }
   }
   
@@ -51,14 +56,14 @@
   
   @media only screen and (min-width:0px) and (max-width:480px) {
     .favorites-container {
-        min-height: 88vh;
+        min-height: 96vh;
     }
     .poke-favorites-grid {
       grid-template-columns: repeat(1, 1fr);
     }
     .favorites-text {
         color: var(--text);
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 800;
         gap: 4rem;
     }

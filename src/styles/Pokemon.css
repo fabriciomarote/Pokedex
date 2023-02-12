@@ -1,4 +1,17 @@
 .pokemon-container {
     background: var(--background);
     min-height: 86.9vh;
+    margin-top: -1px;
 }
+
+@media only screen and (min-width:721px) and (max-width: 1199px) {
+    .pokemon-container {
+        min-height: 90vh;
+    }  
+}
+
+@media only screen and (min-width:0px) and (max-width:480px) {
+    .pokemon-container {
+        min-height: 88.7vh;
+    }   
+  }

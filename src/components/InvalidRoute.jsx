@@ -1,12 +1,10 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom'
 import { TbError404 } from "react-icons/tb";
 import '../styles/InvalidRoute.css'
 
  const InvalidRoute = ( props ) => {
 
     const { theme } = props;
-    const navigate = useNavigate();
 
     return (
         <div className='invalid' data-theme={theme}>

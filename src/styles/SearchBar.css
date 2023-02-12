@@ -28,7 +28,7 @@
     height: 100%;
     padding: 10px 12px;
     margin-left: 10px;
-    background-color: var(--button);
+    background-color: var(--toggle);
     color: var(--textOpposite);
   }
 
@@ -39,7 +39,15 @@
     }
   }
 
-  @media (max-width: 767px) {
+  @media only screen and (min-width:721px) and (max-width: 1199px) {
+    .searchbar-container {
+      margin-top: -1px;
+      padding: 20px;
+
+    }
+  }
+
+  @media only screen and (min-width:481px) and (max-width:720px) {
     .searchbar-container {
       width: 80%;
     }

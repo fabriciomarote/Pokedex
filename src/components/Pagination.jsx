@@ -9,13 +9,13 @@ const Pagination = ( props ) => {
     return (
         <div className="pagination" data-theme={theme}>
             <button className="pagination-btn" onClick={onLeftClick}>
-                <IoIosArrowDropleftCircle size={50}/>
+                <IoIosArrowDropleftCircle size={30}/>
             </button>
             <div> 
             <p className='paginatio-text'>{ page } de { totalPages }</p>
             </div>
             <button className="pagination-btn" onClick={onRightClick}>
-                <IoIosArrowDroprightCircle size={50}/>
+                <IoIosArrowDroprightCircle size={30}/>
             </button> 
         </div>
     );

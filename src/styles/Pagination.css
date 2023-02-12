@@ -26,8 +26,17 @@
   padding-top: 15px;
 }
 
-@media only screen and (min-width:0px) and (max-width:480px) {
+@media only screen and (min-width:721px) and (max-width: 1199px) {
   .paginatio-text {
     font-size: 15px;  
+  }
+}
+
+@media only screen and (min-width:0px) and (max-width:480px) {
+  .pagination {
+    padding-right: 0px;
+  }
+  .paginatio-text {
+    font-size: 10px;  
   }
 }

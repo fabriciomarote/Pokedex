@@ -67,7 +67,6 @@
     width: 40%;
     font-size: 20px;
     font-weight: 600;
-
 }
 .date {
     font-size: 20px;
@@ -232,4 +231,46 @@
     .pokemon-container {
         min-height: 88.7vh;
     }   
+    .box-pokemon {
+        background-color: var(--backgroundPoke) ;
+        width:90%;
+        padding: 10px;
+    }
+    .box-center {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .poke-type {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .box-center-left {
+        width: 100%;
+    }
+    .box-center-right {
+        width: 100%;
+    }
+    .poke-stats {
+        margin-top: 10px;
+    }
+    .poke-stat {
+        width: 50%;
+        height: 25px;
+        margin: 0px;
+        font-size: 7px;
+        font-weight: 900;
+    }
+    .poke-info-date {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 70%;
+        font-size: 10px;
+        font-weight: 800;
+    }
   }

@@ -1,7 +1,11 @@
+body {
+  background: var(--background);
+}
+
 .favorites-container {
     display: grid;
     justify-content: center;
-    background: var(--background);
+    
     min-height: 87vh;
     margin-top: -1px;
     width: 100%;
@@ -72,7 +76,7 @@
     }
     .poke-favorites-grid {
       grid-template-columns: repeat(2, 1fr);
-      margin-top:-250px;
+      margin-top:0px;
     }
     .favorites-text {
         color: var(--text);
@@ -86,6 +90,6 @@
       align-items: center;
       font-size: 25px;
       font-weight: 900;
-      height: 20%;
+      height: 100%;
     }
   }

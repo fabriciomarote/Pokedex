@@ -60,10 +60,6 @@ const Pokemon = ( props ) => {
                                     <div className="image-container">
                                         <img src={pokemon.sprites.front_default} alt={pokemon.name} className="pokemon-image"/>               
                                     </div>
-                                    <div className="poke-info-date">
-                                        <p className='date'>Altura: {pokemon.height}</p>
-                                        <p className='date'>Peso: {pokemon.weight}</p>
-                                    </div>
                                 </div>
                                 <div className="box-center-right">      
                                     <div className="pokemon-info-date"> 
@@ -107,17 +103,21 @@ const Pokemon = ( props ) => {
                                                     );
                                                 })}
                                             </div>
-                                            <button onClick={clickHeart} className="pokemon-heart-button">
-                                                <div className="poke-favorite">
-                                                    {heart}
+                                            <div className="poke-info-like"> 
+                                                <div className="poke-info-date">
+                                                    <p className='date'>Altura: {pokemon.height}</p>
+                                                    <p className='date'>Peso: {pokemon.weight}</p>
                                                 </div>
-                                            </button>    
-                                            
+                                                <button onClick={clickHeart} className="pokemon-heart-button">
+                                                    <div className="poke-favorite">
+                                                        {heart}
+                                                    </div>
+                                                </button>                                        
+                                            </div>
                                         </div>
                                     </div>
-                                    </div>  
-                                </div>
-                            
+                                </div>  
+                            </div>
                         </div>
                     </div>
                 </>

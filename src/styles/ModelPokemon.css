@@ -31,7 +31,7 @@
   }
 
   .pokemon-img {
-    width: 220px;
+    width: 210px;
     height: 200px;
     border-radius: 5px;
     padding: 0px;
@@ -120,40 +120,42 @@
     justify-content: center;
     align-items: center ;
     border: none;
-    border-radius: 50px;
-    height: 40px;
+    border-radius: 100px;
+    height: 30px;
     border-style:hidden;
     border-width: 3px;
     color: black;
     cursor: pointer;
   }
 
-  .bi-heart {
-    margin-top: 2px;
-  }
-
   @media only screen and (min-width: 1200px) {
   }
   
   @media only screen and (min-width:721px) and (max-width: 1199px) {
-    .pokemon-name {
-      font-size: 30px;
-      font-weight: 900;
-    }
-    .pokemon-img-container {
-      margin-top: 10px;
-    }
-    .pokemon-type-text {
-      font-size: 20px;
-      padding-top: 0px;
-      width: 90px;
-      height: 40px;
-    }
-    .card-info {
-      width: 80%;
-      height: 100%;
-      font-size: 20px;
-    }
+    .pokemon-card {
+    width: 100%;
+  }
+  .pokemon-img-container {
+    width: 100%;
+  }
+  .pokemon-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  .pokemon-name {
+    font-size: 30px;
+    font-weight: 800;
+  }
+  .pokemon-id {
+    font-size: 20px;
+  }
+  .pokemon-type-text {
+    font-size: 20px;
+    padding-top: 0px;
+    width: 90px;
+    height: 40px;
+  }
   }
 
 @media (max-width: 767px) and (orientation: landscape) {
@@ -177,8 +179,16 @@
   .pokemon-card {
     width: 100%;
   }
+  .pokemon-img-container {
+    width: 100%;
+  }
+  .pokemon-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
   .pokemon-name {
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 800;
   }
   .pokemon-type-text {
@@ -193,19 +203,64 @@
   .pokemon-card {
     width: 100%;
   }
+  .pokemon-img {
+    max-width: 150px;
+    max-height: 120px;
+    border-radius: 5px;
+    padding: 0px;
+    background-color: var(--pokemonImg);
+  }
   .pokemon-name {
-    font-size: 30px;
+    font-size: 15px;
     font-weight: 800;
   }
   .pokemon-type-text {
-    font-size: 20px;
-    width: 80px;
-    height: 40px;
+    font-size: 12px;
+    width: 60px;
+    height: 30px;
   }
   .card-info {
     width: 80%;
     height: 100%;
-    font-size: 20px;
+    font-size: 15px;
+  }
+  .pokemon-heart-btn {
+    border-radius: 100px;
+    height: 30px;
+  }
+}
+
+@media only screen and (min-width:0px) and (max-width:360px) {
+  .pokemon-card {
+    width: 100%;
+  }
+  .pokemon-img {
+    max-width: 150px;
+    max-height: 120px;
+    border-radius: 5px;
+    padding: 0px;
+    background-color: var(--pokemonImg);
+  }
+  .pokemon-name {
+    font-size: 10px;
+    font-weight: 800;
+  }
+  .pokemon-id {
+    font-size: 10px;
+  }
+  .pokemon-type-text {
+    font-size: 8px;
+    width: 40px;
+    height: 20px;
+  }
+  .card-info {
+    width: 70%;
+    height: 100%;
+    font-size: 12px;
+  }
+  .pokemon-heart-btn {
+    border-radius: 100px;
+    height: 30px;
   }
 }
 

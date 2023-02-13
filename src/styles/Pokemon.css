@@ -56,7 +56,7 @@
 }
 .pokemon-image {
     width: 300px;
-    height: 300px;  
+    height: 320px;  
 }
 .poke-info-date {
     display: flex;
@@ -64,12 +64,14 @@
     justify-content: space-around;
     align-items: center;
     padding-top: 10px;
-    width: 100%;
+    width: 40%;
     font-size: 20px;
     font-weight: 600;
+
 }
 .date {
-    background: silver;
+    font-size: 20px;
+    font-weight: 800;
 }
 .poke-stats {
     display: flex;
@@ -107,7 +109,7 @@
     align-items: left;
     gap: 1rem;
     width: 100%;
-    background:rgb(189, 26, 26);
+    background:var(--backgroundPoke2);
     padding: 10px;
     height: 100%;
     border-radius: 10px;
@@ -127,6 +129,7 @@
     height: 100%;
     margin-bottom: 0px;
     padding: 5px;
+    color: black;
 }
 
 .pokemon-heart-button {
@@ -208,6 +211,15 @@
     font-size: 12px;
     background-color: #009933;
     color: rgb(0, 0, 0);
+}
+
+.poke-info-like {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--backgroundPoke2);
+    border-radius: 5px;
 }
 
 @media only screen and (min-width:721px) and (max-width: 1199px) {

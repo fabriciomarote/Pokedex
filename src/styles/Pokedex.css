@@ -24,8 +24,6 @@
   
   .pokedex-grid {
     display: grid;
-    gap:1rem;
-    padding: 10px;
   }
   
   .pokedex-text-loading {
@@ -34,7 +32,9 @@
     justify-content: center;
     align-items: center;
     font-size: 50px;
+    font-weight: 700;
     gap:5rem;
+    padding-top: 50px;
   }
 
   .title-pokedex, .pokedex-text-loading {
@@ -52,6 +52,7 @@
     }
     .pokedex-grid {
       grid-template-columns: repeat(6, 1fr);
+      gap:.5rem;
     }
   }
   
@@ -62,6 +63,7 @@
     }
     .pokedex-grid {
       grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
     }
     .pokedex-text-loading {
       font-size: 50px;
@@ -76,6 +78,7 @@
     }
     .pokedex-grid {
       grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
     }
   }
   
@@ -85,10 +88,26 @@
       min-height: 80vh;
     }
     .pokedex-grid {
-      grid-template-columns: repeat(1, 1fr);
+      grid-template-columns: repeat(2, 1fr);
+      gap:0.5rem;
+      padding: 0px;
     }
     .pokedex-text-loading {
       font-size: 20px;
+      font-weight: 800;
+      margin-top: 50px;
+    }
+  }
+
+  @media only screen and (min-width:0px) and (max-width:360px) {
+    .pokedex-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap:0.5rem;
+    }
+    .pokedex-text-loading {
+      font-size: 20px;
+      font-weight: 800;
+      margin-top: 50px;
     }
   }
   

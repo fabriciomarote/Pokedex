@@ -88,7 +88,7 @@
       min-width: 100%;
     }
     .favorites {
-      width: 25%;
+      width: 30%;
       height: 30px;
       font-size: 10px;
       font-weight: 700;
@@ -103,7 +103,7 @@
       padding: 10px;
     }
     .favorites {
-      width: 60%;
+      width: 70%;
       height: 30px;
       font-size: 10px;
       font-weight: 700;
@@ -114,6 +114,6 @@
 
 @media only screen and (min-width:0px) and (max-width:360px) {
   .favorites {
-    width: 80%;
+    width: 85%;
   }
 }

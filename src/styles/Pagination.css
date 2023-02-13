@@ -25,6 +25,17 @@
   padding-top: 15px;
 }
 
+@media only screen and (min-width: 1200px) {
+  .pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    width: 100%;
+    padding-right: 10px;
+  }
+}
+
 @media only screen and (min-width:721px) and (max-width: 1199px) {
   .paginatio-text {
     font-size: 15px;  

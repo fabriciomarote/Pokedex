@@ -1,7 +1,12 @@
-.home {
-    min-height: 86.9vh;
+body {
     background: var(--background);
- }
+}
+
+.home {
+    height: 90vh;
+    background: var(--background);
+    
+}
  
  .not-found-text {
     color: white;
@@ -9,3 +14,9 @@
     font-weight: 700;
     margin: 50px;
 }
+
+@media only screen and (min-width:0px) and (max-width:480px) {
+    .home {
+        min-height: 100vh;
+     }
+  }

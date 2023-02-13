@@ -48,9 +48,10 @@
     font-weight: 900;
   }
   
-  .pokemon-type {
+  .poke-type {
     display: flex;
     flex-direction: row;
+
   }
   
   .pokemon-type-text {

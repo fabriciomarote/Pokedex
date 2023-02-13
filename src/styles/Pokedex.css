@@ -1,5 +1,6 @@
 .pokedex-container {
   width: 100%;
+  height: 110vh;
 }
 
 .header {
@@ -24,6 +25,7 @@
   
   .pokedex-grid {
     display: grid;
+    margin-bottom: 30px;
   }
   
   .pokedex-text-loading {

@@ -5,7 +5,7 @@ body {
 .favorites-container {
     display: grid;
     justify-content: center;
-    
+    background: var(--background);
     min-height: 87vh;
     margin-top: -1px;
     width: 100%;

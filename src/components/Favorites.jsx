@@ -7,7 +7,6 @@ import '../styles/Favorites.css'
 const Favorites = ( props ) => {
 
     const { theme } = props;
-
     const { favoritesPokemons } = useContext(FavoritesContext);
 
     return (

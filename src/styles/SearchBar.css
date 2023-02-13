@@ -4,6 +4,7 @@
     justify-content: center;
     padding: 10px;
     flex: 1;
+    margin-top: -1px;
   }
   
   .searchbar {

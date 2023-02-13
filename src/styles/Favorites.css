@@ -3,7 +3,7 @@
     flex-direction: row;
     justify-content: center;
     background: var(--background);
-    min-height: 86.9vh;
+    min-height: 87vh;
     padding: 20px;
     margin-top: -1px;
 }
@@ -14,7 +14,6 @@
     height: 100%;
     gap:1rem;
     padding: 20px;
-    grid-template-columns: repeat(4, 1fr);
     padding-top: 50px;
 }
 .favorites-text {
@@ -34,7 +33,7 @@
 
 @media only screen and (min-width: 1200px) {
     .poke-favorites-grid {
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(6, 1fr);
     }
   }
   

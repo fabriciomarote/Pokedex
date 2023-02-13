@@ -2,6 +2,212 @@
     background: var(--background);
     min-height: 86.9vh;
     margin-top: -1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.box-pokemon {
+    background-color: var(--backgroundPoke) ;
+    width:70%;
+    height: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.4);
+}
+.box-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: 900;
+    text-transform: capitalize;
+    color: white;
+}
+.box-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+.box-center-left, .box-center-right {
+    display: grid;
+    align-items: center;
+}
+.box-center-left {
+    width: 30%;
+}
+.box-center-right {
+    width: 70%;
+    height: 100%;
+    margin-top: -5px;
+}
+.image-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: var(--pokemonImg);
+    border-radius: 10px;
+    width: 100%;
+}
+.pokemon-image {
+    width: 300px;
+    height: 300px;  
+}
+.poke-info-date {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10px;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+}
+.date {
+    background: silver;
+}
+.poke-stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: left;
+    background: teal;
+    border-radius: 10px;
+}
+.poke-stat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 30px;
+    margin: 5px;
+    background-color: darkcyan;
+    font-size: 9px;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+.pokemon-info-date {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 900;
+    color: white;
+}
+.box-bottom {
+    display: grid;
+    align-items: left;
+    gap: 1rem;
+    width: 100%;
+    background:rgb(189, 26, 26);
+    padding: 10px;
+    height: 100%;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+.poke-type {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    padding: 5px;
+    margin: 0px;
+}
+
+.name-date {
+    font-size: 20px;
+    height: 100%;
+    margin-bottom: 0px;
+    padding: 5px;
+}
+
+.pokemon-heart-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center ;
+    border: none;
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    border-style:hidden;
+    border-width: 3px;
+    color: black;
+    cursor: pointer;
+}
+
+.pokemon-type {
+    background-color: #fff152;
+    border-radius: 10px;
+}
+
+.pokemon-ability {
+    background-color: #005681;
+    border-radius: 10px;
+}
+
+.pokemon-power {
+    background-color: #098532;
+    border-radius: 10px;
+}
+
+.poke-type-text {
+    margin: 5px;
+    width: 60px;
+    height: 30px;
+    text-transform: capitalize;
+    border-style: groove;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-style:hidden;
+    border-radius: 5px;
+    font-size: 12px;
+    background-color: #ffec1d;
+    color: rgb(0, 0, 0);
+}
+
+.poke-ability-text {
+    margin: 5px;
+    width: 130px;
+    height: 30px;
+    text-transform: capitalize;
+    border-style: groove;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-style: hidden;
+    border-radius: 5px;
+    font-size: 12px;
+    background-color: #0072ac;
+    color: rgb(0, 0, 0);
+}
+
+.poke-power-text {
+    margin: 5px;
+    width: 130px;
+    height: 30px;
+    text-transform: capitalize;
+    border-style: groove;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-style: hidden;
+    border-radius: 5px;
+    font-size: 12px;
+    background-color: #009933;
+    color: rgb(0, 0, 0);
 }
 
 @media only screen and (min-width:721px) and (max-width: 1199px) {

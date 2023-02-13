@@ -51,7 +51,7 @@
       min-height: 78vh;
     }
     .pokedex-grid {
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(6, 1fr);
     }
   }
   
@@ -75,7 +75,7 @@
       width: 100%;
     }
     .pokedex-grid {
-      grid-template-columns: repeat(1, 1fr);
+      grid-template-columns: repeat(2, 1fr);
     }
   }
   
@@ -88,7 +88,7 @@
       grid-template-columns: repeat(1, 1fr);
     }
     .pokedex-text-loading {
-      font-size: 30px;
+      font-size: 20px;
     }
   }
   

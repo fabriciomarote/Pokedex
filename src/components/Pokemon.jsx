@@ -31,11 +31,11 @@ const Pokemon = ( props ) => {
     const blackHeart =  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" className="bi bi-heart" viewBox="0 0 16 16">
                             <path fillRule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
                         </svg>;
-    const heart = pokemon !== undefined ? (favoritesPokemons.includes(pokemon.name) ? redHeart : blackHeart) : '';
+    const heart = pokemon !== undefined ? (favoritesPokemons.includes(pokemon) ? redHeart : blackHeart) : '';
 
     const clickHeart = (event) => {
         event.preventDefault();
-        updateFavoritesPokemons(pokemon.name);
+        updateFavoritesPokemons(pokemon);
     };
 
     useEffect(() => {
@@ -49,7 +49,6 @@ const Pokemon = ( props ) => {
         if (pokemon !== undefined) {
             return (
                 <>
-                    <div className="pokemon-container" data-theme={theme}>
                         <div className="box-pokemon">
                             <div className="box-top">
                                 <p>{pokemon.name}</p>
@@ -125,7 +124,6 @@ const Pokemon = ( props ) => {
                                 </div>  
                             </div>
                         </div>
-                    </div>
                 </>
             );
         } else {
@@ -137,8 +135,8 @@ const Pokemon = ( props ) => {
     }
 
     return (
-        <div className='not-poke-favorite'>
-            { render() }
+        <div className="pokemon-container" data-theme={theme}>
+           { render() }
         </div>
               
     )

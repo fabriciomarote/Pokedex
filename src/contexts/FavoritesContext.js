@@ -2,7 +2,7 @@ import React from 'react';
 
 const FavoritesContetx = React.createContext({
     favoritesPokemons: [],
-    updateFavoritesPokemons: (id) => id
+    updateFavoritesPokemons: (id) => null
 }) ;
 
 export const FavoritesProvider = FavoritesContetx.Provider;

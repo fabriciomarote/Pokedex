@@ -13,8 +13,7 @@ const localStorageKey = "favorite_pokemon"
 
 function App() {
 
-  const { favoritesPokemons } = useContext(FavoritesContext);
-  const [favorites, setFavorites] = useState(favoritesPokemons);
+  const [favorites, setFavorites] = useState([]);
 
   const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
   const [theme, setTheme] = useLocalStorage('theme', defaultDark ? 'dark' : 'light');
@@ -41,6 +40,7 @@ function App() {
     loadFavoritePokemons();
   }, []);
 
+  console.log(favorites);
   return (
         <>
           <FavoritesProvider value={{ favoritesPokemons: favorites, updateFavoritesPokemons: updateFavoritesPokemons }}>

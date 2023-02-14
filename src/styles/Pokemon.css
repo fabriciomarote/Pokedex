@@ -3,7 +3,7 @@ body {
 }
 .pokemon-container {
     background: var(--background);
-    min-height: 86.9vh;
+    min-height: 84.5vh;
     margin-top: -1px;
     display: flex;
     flex-direction: row;
@@ -12,7 +12,7 @@ body {
     color: white;
 }
 .not-poke-favorite {
-    background: violet;
+    background: var(--background);
     height: 100%;
 }
 .box-pokemon {

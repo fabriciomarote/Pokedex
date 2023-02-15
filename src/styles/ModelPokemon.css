@@ -247,7 +247,7 @@
     margin-bottom: 0px;
   }
   .pokemon-img {
-    max-width: 100px;
+    max-width: 140px;
     max-height: 110px;
     border-radius: 5px;
     padding: 0px;
@@ -273,6 +273,9 @@
   .pokemon-heart-btn {
     border-radius: 100px;
     height: 30px;
+  }
+  .more-info {
+    font-size: 10px;
   }
 }
 

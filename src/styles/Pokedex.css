@@ -1,7 +1,7 @@
 .pokedex-container {
   width: 100%;
   min-height: 100vh;
-  padding: 10px;
+  padding: 0px;
 }
 
 .header {
@@ -108,12 +108,16 @@
   .pokedex-container {
     width: 100%;
     min-height: 100vh;
+    padding: 0px;
+    margin: 0px;
+    background: var(--background);
   }
   .pokedex-grid {
     width: 100%;
     grid-template-columns: repeat(2, 1fr);
     gap:.4rem;
     margin-bottom: 10px;
+    padding-left: 2px;
   }
   .pokedex-text-loading {
     font-size: 20px;

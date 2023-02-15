@@ -279,6 +279,44 @@
   }
 }
 
+@media only screen and (min-width:0px) and (max-width:320px) {
+  .pokemon-card {
+    width: 100%;
+    margin-bottom: 0px;
+  }
+  .pokemon-img {
+    max-width: 250px;
+    max-height: 250px;
+    border-radius: 5px;
+    padding: 0px;
+    background-color: var(--pokemonImg);
+  }
+  .pokemon-name {
+    font-size: 20px;
+    font-weight: 800;
+  }
+  .pokemon-id {
+    font-size: 20px;
+  }
+  .pokemon-type-text {
+    font-size: 15px;
+    width: 50px;
+    height: 30px;
+  }
+  .card-info {
+    width: 90%;
+    height: 100%;
+    font-size: 20px;
+  }
+  .pokemon-heart-btn {
+    border-radius: 100px;
+    height: 30px;
+  }
+  .more-info {
+    font-size: 10px;
+  }
+}
+
   @media only screen and (min-width:0px) and (max-width:700px) and (orientation: landscape) {
   .pokemon-card {
     width: 100%;

@@ -3,11 +3,11 @@ body {
 }
 
 .favorites-container {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     background: var(--background);
     min-height: 87vh;
-    margin-top: -1px;
     width: 100%;
 }
 .poke-favorites-grid {
@@ -55,24 +55,47 @@ body {
   
   @media only screen and (min-width:721px) and (max-width: 1199px) {
     .favorites-container {
-      min-height: 90vh;
-  }
+      min-height: 101vh;
+      margin-top: -2px;
+    }
     .poke-favorites-grid {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .poke-fav-text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 40px;
+      font-weight: 900;
+      height: 100%;
     }
   }
   
   @media only screen and (min-width:481px) and (max-width:720px) {
+    .favorites-container {
+      min-height: 90.7vh;
+      margin: 0px;
+      padding: 0px;
+      margin-top: -2px;
+    }
     .poke-favorites-grid {
       grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      width: 100%;
+    }
+    .poke-fav-text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 40px;
+      font-weight: 900;
+      height: 100%;
     }
   }
   
   @media only screen and (min-width:0px) and (max-width:480px) {
     .favorites-container {
       min-height: 96vh;
-      padding: 0px;
-      margin: 0px;
     }
     .poke-favorites-grid {
       grid-template-columns: repeat(2, 1fr);

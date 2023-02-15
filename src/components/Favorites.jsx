@@ -26,7 +26,7 @@ const Favorites = ( props ) => {
                         }
                     </div>
                 </>
-                }  
+            }  
         </div>
     );
 };

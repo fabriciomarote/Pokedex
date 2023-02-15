@@ -17,7 +17,7 @@ body {
 }
 .box-pokemon {
     background-color: var(--backgroundPoke) ;
-    width:70%;
+    width: 70%;
     height: 100%;
     padding: 20px;
     border-radius: 20px;
@@ -233,10 +233,93 @@ body {
     border-radius: 5px;
 }
 
+@media only screen and (min-width: 1200px) {
+    .box-pokemon {
+        width: 70%;
+    }
+}
+
 @media only screen and (min-width:721px) and (max-width: 1199px) {
     .pokemon-container {
-        min-height: 90vh;
-    }  
+        min-height: 101vh;
+    }
+    .box-pokemon {
+        width: 70%;
+    } 
+    .box-center {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    } 
+    .pokemon-image {
+        width: 450px;
+        height: 400px;  
+    }
+    .poke-stats {
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        border-radius: 20px;
+        padding: 5px;
+    }
+    .poke-stat {
+        width: 100%;
+        height: 25px;
+        margin: 0px;
+        font-size: 15px;
+        font-weight: 900;
+        border-radius: 0px;
+        background: none;
+    }
+    .dates {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (min-width:481px) and (max-width:720px) {
+    .pokemon-container {
+        min-height: 92vh;
+    } 
+    .box-pokemon {
+        width: 90%;
+        margin-top: -50px;
+    }
+    .box-center {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    } 
+    .pokemon-image {
+        width: 600px;
+        height: 500px;  
+    }
+    .poke-stats {
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        border-radius: 20px;
+        padding: 5px;
+    }
+    .poke-stat {
+        width: 100%;
+        height: 25px;
+        margin: 0px;
+        font-size: 20px;
+        font-weight: 700;
+        border-radius: 0px;
+        background: none;
+    }
+    .dates {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .box-center-right {
+        width: 100%;
+    }
+    .name-date {
+        font-size: 20px;
+    }
 }
 
 @media only screen and (min-width:0px) and (max-width:480px) {
@@ -301,5 +384,9 @@ body {
     }
     .name-date {
         font-size: 15px;
+    }
+    .dates {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
   }

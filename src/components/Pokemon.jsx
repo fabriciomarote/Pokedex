@@ -31,7 +31,7 @@ const Pokemon = ( props ) => {
     const blackHeart =  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" className="bi bi-heart" viewBox="0 0 16 16">
                             <path fillRule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
                         </svg>;
-    const heart = pokemon !== undefined ? (favoritesPokemons.includes(pokemon) ? redHeart : blackHeart) : '';
+    const heart = pokemon !== undefined && favoritesPokemons.includes(pokemon) ? redHeart : blackHeart;
 
     const clickHeart = (event) => {
         event.preventDefault();
@@ -39,11 +39,11 @@ const Pokemon = ( props ) => {
     };
 
     useEffect(() => {
-          fetchPokemons();  
-      }, [id]);
+        fetchPokemons();  
+      }, []);
 
-    console.log(id);
-    console.log(pokemon);
+    console.log(pokemons);
+    console.log(favoritesPokemons);
 
     const render = () => {
         if (pokemon !== undefined) {
@@ -66,7 +66,7 @@ const Pokemon = ( props ) => {
                                             { pokemon.stats.map((stat, idx) => {
                                                 return (
                                                     <div key={idx} className="poke-stat">
-                                                        {stat.stat.name} {stat.base_stat}
+                                                        {stat.stat.name}: {stat.base_stat}
                                                     </div>
                                                 );
                                             })}

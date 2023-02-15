@@ -247,6 +247,11 @@ body {
         background-color: var(--backgroundPoke) ;
         width:90%;
         padding: 10px;
+        margin-top: 50px;
+    }
+    .pokemon-image {
+        width: 200px;
+        height: 200px;  
     }
     .box-center {
         display: grid;

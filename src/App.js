@@ -21,7 +21,7 @@ function App() {
   const updateFavoritesPokemons = (pokemon) => {
     const updated = [...favorites];
     const indexFavorite = updated.indexOf(pokemon);
-    if (indexFavorite >= 0 ) {
+    if (updated.includes(pokemon)) {
       updated.splice(indexFavorite, 1);
     } else {
       updated.push(pokemon);

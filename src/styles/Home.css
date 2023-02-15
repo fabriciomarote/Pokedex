@@ -17,6 +17,6 @@ body {
 
 @media only screen and (min-width:0px) and (max-width:480px) {
     .home {
-        min-height: 100vh;
+        min-height: 10vh;
      }
   }

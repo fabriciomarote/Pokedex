@@ -44,7 +44,7 @@ const ModelPokemon = ( props ) => {
                             })}
                         </div>
                         <div className="more-info">
-                            <a href={`/pokemon/${pokemon.id}`} className="modelPokemon"><p>ver más</p></a>
+                            <a href={`/pokemon/${pokemon.id}`} className="modelPokemon"><p>ver más datos    </p></a>
                         </div>
                     </div>
                     <button onClick={clickHeart} className="pokemon-heart-btn">

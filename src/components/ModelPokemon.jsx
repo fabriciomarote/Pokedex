@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useState, useContext } from 'react';
 import FavoritesContext from '../contexts/FavoritesContext';
 import '../styles/ModelPokemon.css';
 
@@ -20,6 +20,52 @@ const ModelPokemon = ( props ) => {
         updateFavoritesPokemons(pokemon);
     };
 
+    const backgroundByPokemonTypes = (type) => {
+        let color = 'black';
+        if(type === 'normal') {
+           return color = "grey";
+        } else if (type === 'grass') {
+            return color = "green";
+        } else if (type === 'grass') {
+            return color = "green";
+        } else if (type === 'poison') {
+            return color = "darkmagenta";
+        } else if (type === 'fire') {
+            return color = "orangered";
+        } else if (type === 'flying') {
+            return color = "cornflowerblue";
+        } else if (type === 'water') {
+            return color = "dodgerblue";
+        } else if (type === 'electric') {
+            return color = "goldenrod";
+        } else if (type === 'ground') {
+            return color = "saddlebrown";
+        } else if (type === 'fairy') {
+            return color = "violet";
+        } else if (type === 'bug') {
+            return color = "darkolivegreen";
+        } else if (type === 'fighting') {
+            return color = "coral";
+        } else if (type === 'psychic') {
+            return color = "mediumslateblue";
+        } else if (type === 'rock') {
+            return color = "chocolate";
+        } else if (type === 'steel') {
+            return color = "lightslategray";
+        } else if (type === 'ice') {
+            return color = "deepskyblue";
+        } else if (type === 'ghost') {
+            return color = "darkslateblue";
+        } else if (type === 'dragon') {
+            return color = "darkorange";
+        } 
+        else { 
+            return color;
+        }
+    }
+
+    console.log(pokemon.types[0].type.name);
+
     return (
         <div className="pokemon-card" data-theme={theme}>
             <div className="pokemon-img-container">
@@ -37,19 +83,19 @@ const ModelPokemon = ( props ) => {
                         <div className="poke-type">
                             { pokemon.types.map((type, idx) => {
                                 return (
-                                    <div key={idx} className="pokemon-type-text">
+                                    <div style={{ backgroundColor:backgroundByPokemonTypes(type.type.name)}} key={idx} className="pokemon-type-text">
                                         {type.type.name}
                                     </div>
                                 );
                             })}
                         </div>
                         <div className="more-info">
-                            <a href={`/pokemon/${pokemon.id}`} className="modelPokemon"><p>ver más datos    </p></a>
+                            <a href={`/pokemon/${pokemon.id}`} className="modelPokemon"><p>ver más datos</p></a>
                         </div>
                     </div>
                     <button onClick={clickHeart} className="pokemon-heart-btn">
                         <div className="pokemon-favorite">
-                            {heart}
+                            {heart} 
                         </div>
                     </button>    
                 </div>

@@ -7,7 +7,6 @@ body {
     flex-direction: column;
     justify-content: center;
     background: var(--background);
-    min-height: 87vh;
     width: 100%;
 }
 .poke-favorites-grid {
@@ -43,10 +42,11 @@ body {
 @media only screen and (min-width: 1200px) {
   .favorites-container {
     padding: 10px;
-}
+    min-height: 87vh;
+  }
     .poke-favorites-grid {
       grid-template-columns: repeat(6, 1fr);
-      margin-top:-150px;
+      margin-top:0px;
     }
     .poke-fav-text {
       font-size: 40px;

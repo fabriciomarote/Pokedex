@@ -1,7 +1,6 @@
-import React, { useContext, useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { FavoritesProvider } from './contexts/FavoritesContext';
-import FavoritesContext from './contexts/FavoritesContext';
 import Navbar from './components/NavBar.jsx';
 import Home from './components/Home.jsx';
 import useLocalStorage from 'use-local-storage';
@@ -39,8 +38,6 @@ function App() {
   useEffect(() => {
     loadFavoritePokemons();
   }, []);
-
-  console.log(favorites);
   return (
         <>
           <FavoritesProvider value={{ favoritesPokemons: favorites, updateFavoritesPokemons: updateFavoritesPokemons }}>

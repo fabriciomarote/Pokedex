@@ -59,22 +59,22 @@ const Home = ( props ) => {
 
   return (
         <div className="home" data-theme={theme}>
-              <Searchbar onSearch={onSearch}/> 
-              {notFound ? 
-                <div className="not-found-text">
-                  No se encontro el Pokemon que buscabas
-                </div>
-                : 
-                <Pokedex 
-                  loading = {loading}
-                  pokemons={pokemons}
-                  page={page}
-                  setPage={setPage}
-                  total={total}
-                  theme={theme}
-                /> 
-                }  
-            </div>
+          <Searchbar onSearch={onSearch}/> 
+          { notFound ? 
+              <div className="not-found-text">
+                No se encontro el Pokemon que buscabas
+              </div>
+            : 
+              <Pokedex 
+                loading = {loading}
+                pokemons={pokemons}
+                page={page}
+                setPage={setPage}
+                total={total}
+                theme={theme}
+              /> 
+            }  
+        </div>
   );
 };
 

@@ -1,11 +1,6 @@
-body {
-    background: var(--background);
-}
-
 .home {
-    height: 90vh;
+    min-height: 123vh;
     background: var(--background);
-    
 }
  
  .not-found-text {

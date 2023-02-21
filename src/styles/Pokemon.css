@@ -186,8 +186,8 @@ body {
     border-style:hidden;
     border-radius: 5px;
     font-size: 12px;
-    background-color: #ffec1d;
-    color: rgb(0, 0, 0);
+    font-weight: 800;
+    color: rgb(255, 255, 255);
 }
 
 .poke-ability-text {
@@ -235,7 +235,7 @@ body {
 
 @media only screen and (min-width: 1200px) {
     .box-pokemon {
-        width: 70%;
+        width: 80%;
     }
 }
 

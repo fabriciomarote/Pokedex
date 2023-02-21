@@ -38,12 +38,53 @@ const Pokemon = ( props ) => {
         updateFavoritesPokemons(pokemon);
     };
 
+    const backgroundByPokemonTypes = (type) => {
+        let color = 'black';
+        if(type === 'normal') {
+           return color = "grey";
+        } else if (type === 'grass') {
+            return color = "green";
+        } else if (type === 'grass') {
+            return color = "green";
+        } else if (type === 'poison') {
+            return color = "darkmagenta";
+        } else if (type === 'fire') {
+            return color = "orangered";
+        } else if (type === 'flying') {
+            return color = "cornflowerblue";
+        } else if (type === 'water') {
+            return color = "dodgerblue";
+        } else if (type === 'electric') {
+            return color = "goldenrod";
+        } else if (type === 'ground') {
+            return color = "saddlebrown";
+        } else if (type === 'fairy') {
+            return color = "violet";
+        } else if (type === 'bug') {
+            return color = "darkolivegreen";
+        } else if (type === 'fighting') {
+            return color = "coral";
+        } else if (type === 'psychic') {
+            return color = "mediumslateblue";
+        } else if (type === 'rock') {
+            return color = "chocolate";
+        } else if (type === 'steel') {
+            return color = "lightslategray";
+        } else if (type === 'ice') {
+            return color = "deepskyblue";
+        } else if (type === 'ghost') {
+            return color = "darkslateblue";
+        } else if (type === 'dragon') {
+            return color = "darkorange";
+        } 
+        else { 
+            return color;
+        }
+    }
+
     useEffect(() => {
         fetchPokemons();  
       }, []);
-
-    console.log(pokemons);
-    console.log(favoritesPokemons);
 
     const render = () => {
         if (pokemon !== undefined) {
@@ -77,7 +118,7 @@ const Pokemon = ( props ) => {
                                                 <div className='dates'>
                                                     { pokemon.types.map((type, idx) => {
                                                         return (
-                                                            <div key={idx} className="poke-type-text">
+                                                            <div key={idx} style={{ backgroundColor:backgroundByPokemonTypes(type.type.name)}} className="poke-type-text">
                                                                 {type.type.name}
                                                             </div>
                                                         );
@@ -110,8 +151,8 @@ const Pokemon = ( props ) => {
                                             </div>
                                             <div className="poke-info-like"> 
                                                 <div className="poke-info-date">
-                                                    <p className='date'>Altura: {pokemon.height}</p>
-                                                    <p className='date'>Peso: {pokemon.weight}</p>
+                                                    <p className='date'>Altura: {pokemon.height},0 m</p>
+                                                    <p className='date'>Peso: {pokemon.weight},0 kg</p>
                                                 </div>
                                                 <button onClick={clickHeart} className="pokemon-heart-button">
                                                     <div className="poke-favorite">

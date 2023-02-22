@@ -4,9 +4,7 @@ import ModelPokemon from './ModelPokemon.jsx';
 import Loading from './Loading.jsx';
 import '../styles/Pokedex.css'
 
-const Pokedex = (props) => {
-
-    const { pokemons, page, setPage, total, loading, theme } = props;
+const Pokedex = ({ pokemons, page, setPage, total, loading, theme }) => {
 
     const lastPage = () => {
         const nextPage = Math.max(page - 1, 0);
@@ -62,7 +60,6 @@ const Pokedex = (props) => {
         }
     }
 
-
     return (
         <div className='pokedex-container' data-theme={theme}>
             <div className="header">
@@ -81,8 +78,8 @@ const Pokedex = (props) => {
             </div>
             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 { loading ?
-                    <div className="pokedex-text-loading">
-                        <p> Cargando Pokemones...</p>
+                    <div className='pokedex-text'>
+                        <p className='pokedex-text-loading'> Cargando Pokemones...</p>
                         <Loading/>
                     </div>
                     :

@@ -1,23 +1,36 @@
 .home {
-    min-height: 123vh;
     background: var(--background);
 }
  
- .not-found-text {
+.not-found-text {
     color: white;
     font-size: 30px;
     font-weight: 700;
     margin: 50px;
 }
 
+@media only screen and (min-width: 1200px) {
+    .home {
+        height: 88.6vh;
+    }
+}
+
 @media only screen and (min-width:721px) and (max-width: 1199px) {
     .home {
         min-height: 100vh;
-     }
+    }
+}
+
+@media only screen and (min-width:481px) and (max-width:720px) {
+    .home {
+        min-height: 100vh;
+        background: var(--background);
+    }
 }
 
 @media only screen and (min-width:0px) and (max-width:480px) {
     .home {
         min-height: 100vh;
-     }
-  }
+       
+    }
+}

@@ -4,7 +4,7 @@ import Pokedex from './Pokedex.jsx';
 import Searchbar from './SearchBar.jsx';
 import '../styles/Home.css'
 
-const Home = ( props ) => {
+const Home = ({ theme }) => {
 
   const [pokemons, setPokemons] = useState([]);
   const [page, setPage] = useState(0);
@@ -12,8 +12,6 @@ const Home = ( props ) => {
   const [loading, setLoading] = useState(true);
   const [notFound, setNotFound] = useState(false);
   const [searching, setSearching] = useState(false);
-  
-  const { theme } = props;
 
   const fetchPokemons = async () => {
     try{
@@ -58,23 +56,23 @@ const Home = ( props ) => {
   };
 
   return (
-        <div className="home" data-theme={theme}>
-          <Searchbar onSearch={onSearch}/> 
-          { notFound ? 
-              <div className="not-found-text">
-                No se encontro el Pokemon que buscabas
-              </div>
-            : 
-              <Pokedex 
-                loading = {loading}
-                pokemons={pokemons}
-                page={page}
-                setPage={setPage}
-                total={total}
-                theme={theme}
-              /> 
-            }  
-        </div>
+    <div className="home" data-theme={theme}>
+      <Searchbar onSearch={onSearch}/> 
+      { notFound ? 
+          <div className="not-found-text">
+            No se encontro el Pokemon que buscabas
+          </div>
+        : 
+          <Pokedex 
+            loading = {loading}
+            pokemons={pokemons}
+            page={page}
+            setPage={setPage}
+            total={total}
+            theme={theme}
+          /> 
+      }  
+    </div>
   );
 };
 

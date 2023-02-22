@@ -4,9 +4,8 @@ import ModelPokemon from './ModelPokemon.jsx';
 import image from '../pokemon-sad.png'
 import '../styles/Favorites.css'
 
-const Favorites = ( props ) => {
+const Favorites = ( {theme} ) => {
 
-    const { theme } = props;
     const { favoritesPokemons } = useContext(FavoritesContext);
 
     return (

@@ -1,14 +1,8 @@
 import React, { useState } from 'react';
-import { 
-    SwitchContainer,
-    SwitchWrapper,
-    SwitchBGC,
-    ButtonSwitch,
-} from './switch/Switch.elements';
+import { SwitchContainer, SwitchWrapper, SwitchBGC, ButtonSwitch } from './switch/Switch.elements';
 
-const Switch = (props) => {
+const Switch = ({ theme, setTheme }) => {
 
-    const { theme, setTheme } = props;
     const [position, setPosition] = useState(false);
 
     const changeMode = () => {
@@ -31,7 +25,7 @@ const Switch = (props) => {
                 <SwitchWrapper>
                     <SwitchBGC>
                         <ButtonSwitch className='button-switch'
-                            onClick={ () => changeMode()}
+                            onClick={() => changeMode()}
                             position={ position } 
                         ></ButtonSwitch>
                     </SwitchBGC>

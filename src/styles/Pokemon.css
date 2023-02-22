@@ -1,9 +1,6 @@
-body {
-    background: var(--background);
-}
 .pokemon-container {
     background: var(--background);
-    min-height: 84.5vh;
+    min-height: 88.7vh;
     margin-top: -1px;
     display: flex;
     flex-direction: row;
@@ -16,14 +13,13 @@ body {
     height: 100%;
 }
 .box-pokemon {
-    background-color: var(--backgroundPoke) ;
-    width: 70%;
+    width: 60%;
     height: 100%;
     padding: 20px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.4);
 }
-.box-top {
+.box-top-poke {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -31,7 +27,7 @@ body {
     padding: 10px;
     font-size: 30px;
     font-weight: 900;
-    text-transform: capitalize;
+    text-transform: uppercase;
     color: white;
 }
 .box-center {
@@ -57,13 +53,11 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: var(--pokemonImg);
-    border-radius: 10px;
     width: 100%;
 }
 .pokemon-image {
     width: 300px;
-    height: 320px;  
+    height: 300px;  
 }
 .poke-info-date {
     display: flex;
@@ -74,6 +68,7 @@ body {
     width: 40%;
     font-size: 20px;
     font-weight: 600;
+    color: white;
 }
 .date {
     font-size: 20px;
@@ -84,17 +79,18 @@ body {
     flex-direction: row;
     justify-content: space-around;
     align-items: left;
-    background: teal;
+    background-color: rgba(0, 0, 0, 0.168);
     border-radius: 10px;
+    margin-bottom: 10px;
 }
 .poke-stat {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 50%;
-    height: 30px;
+    height: 40px;
     margin: 5px;
-    background-color: darkcyan;
+    background-color: rgba(0, 0, 0, 0.473);
     font-size: 9px;
     border-radius: 10px;
     text-transform: uppercase;
@@ -120,8 +116,7 @@ body {
     text-align: left;
     gap: 1rem;
     width: 100%;
-    background:var(--backgroundPoke2);
-    padding: 10px;
+    padding: 0px;
     height: 100%;
     border-radius: 10px;
     margin-top: 5px;
@@ -140,7 +135,7 @@ body {
     height: 100%;
     margin-bottom: 0px;
     padding: 5px;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 .pokemon-heart-button {
@@ -159,18 +154,23 @@ body {
 }
 
 .pokemon-type {
-    background-color: #fff152;
+    background-color: rgba(0, 0, 0, 0.168);
     border-radius: 10px;
+    color: var(--text);
 }
 
 .pokemon-ability {
-    background-color: #005681;
+    background-color: rgba(0, 0, 0, 0.168);
     border-radius: 10px;
 }
 
 .pokemon-power {
-    background-color: #098532;
+    background-color: rgba(0, 0, 0, 0.168);
     border-radius: 10px;
+}
+
+.not-power {
+    height: 35px;
 }
 
 .poke-type-text {
@@ -187,7 +187,8 @@ body {
     border-radius: 5px;
     font-size: 12px;
     font-weight: 800;
-    color: rgb(255, 255, 255);
+    background-color:rgba(0, 0, 0, 0.473);
+    color:#ffffff;
 }
 
 .poke-ability-text {
@@ -203,8 +204,8 @@ body {
     border-style: hidden;
     border-radius: 5px;
     font-size: 12px;
-    background-color: #0072ac;
-    color: rgb(0, 0, 0);
+    background-color:rgba(0, 0, 0, 0.473);
+    color: rgb(255, 255, 255);
 }
 
 .poke-power-text {
@@ -220,8 +221,8 @@ body {
     border-style: hidden;
     border-radius: 5px;
     font-size: 12px;
-    background-color: #009933;
-    color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.473);
+    color: rgb(255, 255, 255);
 }
 
 .poke-info-like {
@@ -229,13 +230,12 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background: var(--backgroundPoke2);
     border-radius: 5px;
 }
 
 @media only screen and (min-width: 1200px) {
     .box-pokemon {
-        width: 80%;
+        width: 90%;
     }
 }
 

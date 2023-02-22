@@ -1,9 +1,8 @@
 import React, {useState} from 'react';
 import '../styles/SearchBar.css'
 
-const SearchBar = (props) => {
+const SearchBar = ({ onSearch }) => {
 
-    const { onSearch } = props;
     const [search, setSearch] = useState("");
    
     const onChange = (event) => {

@@ -1,10 +1,9 @@
-import React, { useState, useContext } from 'react';
+import React, { useContext } from 'react';
 import FavoritesContext from '../contexts/FavoritesContext';
 import '../styles/ModelPokemon.css';
 
-const ModelPokemon = ( props ) => {
+const ModelPokemon = ({ pokemon, theme }) => {
 
-    const { pokemon, theme } = props;
     const { favoritesPokemons, updateFavoritesPokemons } = useContext(FavoritesContext);
 
     const redHeart =    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="red" className="bi bi-heart" viewBox="0 0 16 16">
@@ -21,53 +20,49 @@ const ModelPokemon = ( props ) => {
     };
 
     const backgroundByPokemonTypes = (type) => {
-        let color = 'black';
+        let color = '#313131';
         if(type === 'normal') {
-           return color = "grey";
+           return color = "#D3D3D3";
         } else if (type === 'grass') {
-            return color = "green";
-        } else if (type === 'grass') {
-            return color = "green";
+            return color = "#35C74D";
         } else if (type === 'poison') {
-            return color = "darkmagenta";
+            return color = "#A86CE4";
         } else if (type === 'fire') {
-            return color = "orangered";
+            return color = '#F98E1D';
         } else if (type === 'flying') {
             return color = "cornflowerblue";
         } else if (type === 'water') {
-            return color = "dodgerblue";
+            return color = "#74C5F0";
         } else if (type === 'electric') {
-            return color = "goldenrod";
+            return color = "#F9E839";
         } else if (type === 'ground') {
-            return color = "saddlebrown";
+            return color = "#A5856F";
         } else if (type === 'fairy') {
-            return color = "violet";
+            return color = "#CF92E6";
         } else if (type === 'bug') {
-            return color = "darkolivegreen";
+            return color = "#81A97F";
         } else if (type === 'fighting') {
             return color = "coral";
         } else if (type === 'psychic') {
-            return color = "mediumslateblue";
+            return color = "#799BB5";
         } else if (type === 'rock') {
-            return color = "chocolate";
+            return color = "#BF9167";
         } else if (type === 'steel') {
             return color = "lightslategray";
         } else if (type === 'ice') {
-            return color = "deepskyblue";
+            return color = "#9AE7F3";
         } else if (type === 'ghost') {
-            return color = "darkslateblue";
+            return color = "#87708C";
         } else if (type === 'dragon') {
-            return color = "darkorange";
+            return color = "#F76A4E";
         } 
         else { 
             return color;
         }
     }
 
-    console.log(pokemon.types[0].type.name);
-
     return (
-        <div className="pokemon-card" data-theme={theme}>
+        <div className="pokemon-card" data-theme={theme} style={{ backgroundColor:backgroundByPokemonTypes(pokemon.types[0].type.name)}}>
             <div className="pokemon-img-container">
                 <img src={pokemon.sprites.front_default} alt={pokemon.name} className="pokemon-img"/>               
             </div>
@@ -83,14 +78,14 @@ const ModelPokemon = ( props ) => {
                         <div className="poke-type">
                             { pokemon.types.map((type, idx) => {
                                 return (
-                                    <div style={{ backgroundColor:backgroundByPokemonTypes(type.type.name)}} key={idx} className="pokemon-type-text">
+                                    <div key={idx} className="pokemon-type-text">
                                         {type.type.name}
                                     </div>
                                 );
                             })}
                         </div>
                         <div className="more-info">
-                            <a href={`/pokemon/${pokemon.id}`} className="modelPokemon"><p>ver más datos</p></a>
+                            <a href={`/pokemon/${pokemon.id}`} className="modelPokemon"><p>Ver más</p></a>
                         </div>
                     </div>
                     <button onClick={clickHeart} className="pokemon-heart-btn">

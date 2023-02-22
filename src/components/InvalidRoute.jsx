@@ -2,9 +2,7 @@ import React from 'react'
 import { TbError404 } from "react-icons/tb";
 import '../styles/InvalidRoute.css'
 
- const InvalidRoute = ( props ) => {
-
-    const { theme } = props;
+ const InvalidRoute = ({ theme }) => {
 
     return (
         <div className='invalid' data-theme={theme}>

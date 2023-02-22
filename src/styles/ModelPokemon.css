@@ -1,142 +1,152 @@
-  .pokemon-card {
-    display: flex;
-    flex-direction: column;
-    border-radius: 10px;
-    padding: 10px;
-    color: var(--text);
-    gap: 0rem;
-    width: 100%;
-  }
-  
-  .pokemon-card:hover {
-    transform: scale(1.01);
-    background-color: var(--hover);
-    opacity: calc(0.7);
-  }
-  
-  p, .card-top, .card-bottom {
-    color: var(--text);
-  }
-  
-  .card-top, .card-bottom {
-    padding: 0px;  
-  }
+.pokemon-card {
+  display: grid;
+  border-radius: 5px;
+  padding: 0px;
+  gap: 0rem;
+  width: 100%;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+}
 
-  .pokemon-img-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
+.pokemon-card:hover {
+  transform: scale(1.01);
+  background-color: var(--hover);
+  opacity: calc(0.7);
+}
 
-  .pokemon-img {
-    width: 210px;
-    height: 200px;
-    border-radius: 5px;
-    padding: 0px;
-    background-color: var(--pokemonImg);
-  }
-  
-  .pokemon-id {
-    color: rgb(111, 105, 105);
-    font-weight: 700;
-  }
+p, .card-top, .card-bottom {
+  color: black;
+}
 
-  .pokemon-name {
-    font-size: 20px;
-    font-weight: 900;
-  }
-  
-  .poke-type {
-    display: flex;
-    flex-direction: row;
-  }
+.card-top, .card-bottom {
+  padding: 0px;  
+}
 
-  .type-poke {
-    font-weight: 800;
-    padding: 5px;
-    padding-top: 3px;
-  }
-  
-  .pokemon-type-text {
-    margin: 2px;
-    width: 60px;
-    height: 30px;
-    text-transform: capitalize;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    border-radius: 5px;
-    font-size: 15px;
-    background-color: rgba(0, 0, 0, 0.738);
-    color:white;
-  }
-  
-  .card-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
+.pokemon-img-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.pokemon-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 5px;
+  padding: 0px;
+}
+
+.pokemon-id {
+  color: rgb(111, 105, 105);
+  font-weight: 700;
+}
+
+.pokemon-name {
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.poke-type {
+  display: flex;
+  flex-direction: row;
+}
+
+.type-poke {
+  font-weight: 800;
+  padding: 5px;
+  padding-top: 3px;
+}
+
+.pokemon-type-text {
+  margin: 2px;
+  width: 70px;
+  height: 30px;
+  text-transform: capitalize;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.738);
+  color:#ffffff;
+  border-style:solid;
+  border-color: black;
+  border-width: 1px;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.4);
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: capitalize; 
+  width: 100%;
+  margin-top: -30px;
+  padding: 5px;
+}
+
+.card-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 50%;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: -20px;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  padding-top: 20px; 
+  gap: 1rem;
+}
+
+.more-info {
+  font-weight: 700;
+}
+
+.card-top h3 {
+  text-transform: capitalize;
+}
+
+.pokemon-heart-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center ;
+  border: none;
+  border-radius: 100px;
+  height: 30px;
+  border-style:hidden;
+  border-width: 3px;
+  color: black;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 1200px) {
   .card-top {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    text-transform: capitalize; 
-    width: 100%;
-    padding: 5px;
+    margin-top: -50px;
   }
   
-  .card-bottom {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
-    height: 50%;
-    width: 100%;
-  }
+}
 
-  .card-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    padding-top: 20px; 
-    gap: 1rem;
-  }
-
-  .more-info {
-    font-weight: 700;
-  }
-  
-  .card-top h3 {
-    text-transform: capitalize;
-  }
-  
-  .pokemon-heart-btn {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center ;
-    border: none;
-    border-radius: 100px;
-    height: 30px;
-    border-style:hidden;
-    border-width: 3px;
-    color: black;
-    cursor: pointer;
-  }
-
-  @media only screen and (min-width: 1200px) {
-  }
-  
-  @media only screen and (min-width:721px) and (max-width: 1199px) {
+@media only screen and (min-width:721px) and (max-width: 1199px) {
   .pokemon-card {
     width: 100%;
   }
@@ -213,7 +223,6 @@
     max-height: 120px;
     border-radius: 5px;
     padding: 0px;
-    background-color: var(--pokemonImg);
   }
   .pokemon-name {
     font-size: 12px;
@@ -250,7 +259,6 @@
     max-height: 110px;
     border-radius: 5px;
     padding: 0px;
-    background-color: var(--pokemonImg);
   }
   .pokemon-name {
     font-size: 8px;
@@ -261,7 +269,8 @@
   }
   .pokemon-type-text {
     font-size: 8px;
-    width: 30px;
+    font-weight: 600;
+    width: 40px;
     height: 15px;
   }
   .card-info {
@@ -288,7 +297,6 @@
     max-height: 250px;
     border-radius: 5px;
     padding: 0px;
-    background-color: var(--pokemonImg);
   }
   .pokemon-name {
     font-size: 20px;
@@ -316,7 +324,7 @@
   }
 }
 
-  @media only screen and (min-width:0px) and (max-width:700px) and (orientation: landscape) {
+@media only screen and (min-width:0px) and (max-width:700px) and (orientation: landscape) {
   .pokemon-card {
     width: 100%;
   }

@@ -2,9 +2,7 @@ import React from 'react';
 import { IoIosArrowDropleftCircle, IoIosArrowDroprightCircle } from "react-icons/io";
 import '../styles/Pagination.css'
 
-const Pagination = ( props ) => {
-
-    const { onLeftClick, onRightClick, page, totalPages, theme } = props;
+const Pagination = ({ onLeftClick, onRightClick, page, totalPages, theme }) => {
 
     return (
         <div className="pagination" data-theme={theme}>

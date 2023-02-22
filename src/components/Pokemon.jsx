@@ -38,29 +38,29 @@ const Pokemon = ({ theme }) => {
     const backgroundByPokemonTypes = (type) => {
         let color = '#313131';
         if(type === 'normal') {
-           return color = "#D3D3D3";
+           return color = "#D5DBDB";
         } else if (type === 'grass') {
-            return color = "#35C74D";
+            return color = "#82E0AA";
         } else if (type === 'poison') {
-            return color = "#A86CE4";
+            return color = "#C39BD3";
         } else if (type === 'fire') {
-            return color = '#F98E1D';
+            return color = '#F8C471';
         } else if (type === 'flying') {
             return color = "cornflowerblue";
         } else if (type === 'water') {
-            return color = "#74C5F0";
+            return color = "#AED6F1";
         } else if (type === 'electric') {
-            return color = "#F9E839";
+            return color = "#F4D03F";
         } else if (type === 'ground') {
             return color = "#A5856F";
         } else if (type === 'fairy') {
-            return color = "#CF92E6";
+            return color = "#D7BDE2";
         } else if (type === 'bug') {
-            return color = "#81A97F";
+            return color = "#45B39D";
         } else if (type === 'fighting') {
-            return color = "coral";
+            return color = "#F5B7B1";
         } else if (type === 'psychic') {
-            return color = "#799BB5";
+            return color = "#7FB3D5";
         } else if (type === 'rock') {
             return color = "#BF9167";
         } else if (type === 'steel') {
@@ -70,7 +70,7 @@ const Pokemon = ({ theme }) => {
         } else if (type === 'ghost') {
             return color = "#87708C";
         } else if (type === 'dragon') {
-            return color = "#F76A4E";
+            return color = "#F1948A";
         } 
         else { 
             return color;

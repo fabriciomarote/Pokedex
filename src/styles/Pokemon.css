@@ -334,7 +334,8 @@
     }
     .pokemon-image {
         width: 200px;
-        height: 200px;  
+        height: 200px;
+        margin-top: -35px;  
     }
     .box-center {
         display: grid;
@@ -378,8 +379,12 @@
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        width: 70%;
+        width: 80%;
         font-size: 10px;
+        font-weight: 800;
+    }
+    .date {
+        font-size: 14px;
         font-weight: 800;
     }
     .name-date {

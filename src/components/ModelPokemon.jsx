@@ -75,15 +75,6 @@ const ModelPokemon = ({ pokemon, theme }) => {
                 </div>
                 <div className="card-bottom">
                     <div className='card-info'>
-                        <div className="poke-type">
-                            { pokemon.types.map((type, idx) => {
-                                return (
-                                    <div key={idx} className="pokemon-type-text">
-                                        {type.type.name}
-                                    </div>
-                                );
-                            })}
-                        </div>
                         <div className="more-info">
                             <a href={`/pokemon/${pokemon.id}`} className="modelPokemon"><p>Ver más</p></a>
                         </div>

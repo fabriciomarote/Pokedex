@@ -14,6 +14,7 @@ code {
 
 :root {
   --background: linear-gradient(90deg, rgb(241, 241, 241) 3%, rgb(243, 243, 243) 33%, rgb(240, 240, 240) 65%, rgb(237, 236, 236) 100%);
+  --background2: #e1e1e1; 
   --backgroundPoke: rgb(234, 232, 236);
   --backgroundPoke2: rgb(216, 213, 216);
   --text: #000000;
@@ -27,6 +28,7 @@ code {
 }
 [data-theme='dark'] {
   --background: linear-gradient(90deg, rgba(18,17,17,1) 14%, rgba(23,22,22,1) 55%, rgba(13,13,13,1) 88%);
+  --background2: #0d0d0d;
   --backgroundPoke: rgb(14, 0, 18);
   --backgroundPoke2: rgb(14, 2, 16);
   --text: #ffffff;

@@ -283,7 +283,7 @@
     } 
     .box-pokemon {
         width: 90%;
-        margin-top: -50px;
+        margin-top: 50px;
     }
     .box-center {
         display: grid;
@@ -295,6 +295,7 @@
         height: 500px;  
     }
     .poke-stats {
+        width: 100%;
         margin-top: 10px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -309,6 +310,7 @@
         font-weight: 700;
         border-radius: 0px;
         background: none;
+        background: yellowgreen;
     }
     .dates {
         display: grid;

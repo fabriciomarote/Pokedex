@@ -11,7 +11,7 @@
 
 @media only screen and (min-width: 1200px) {
     .home {
-        height: 88.6vh;
+        min-height: 100vh;
     }
 }
 

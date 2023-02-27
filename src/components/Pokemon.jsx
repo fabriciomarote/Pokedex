@@ -1,4 +1,5 @@
 import React, { useContext, useState, useEffect } from 'react';
+import { useNavigate } from "react-router-dom";
 import { getPokemonData, getPokemons2 } from '../api';
 import { useParams } from "react-router-dom";
 import FavoritesContext from '../contexts/FavoritesContext';
@@ -8,6 +9,7 @@ const Pokemon = ({ theme }) => {
 
     const { id } = useParams();
     const [pokemons, setPokemons] = useState([]);
+    const navigate = useNavigate();
     const pokemon = pokemons.find(poke => poke.id == id)
     const { favoritesPokemons, updateFavoritesPokemons } = useContext(FavoritesContext);
 
@@ -172,6 +174,9 @@ const Pokemon = ({ theme }) => {
 
     return (
         <div className="pokemon-container" data-theme={theme}>
+            <div className='button-back'>
+                <button className='button' onClick={ () => navigate(-1) }>Volver</button>
+            </div>
            {render()}
         </div>
               

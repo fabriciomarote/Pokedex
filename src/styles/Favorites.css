@@ -4,6 +4,7 @@
   align-items: center;
   background: var(--background);
   width: 100%;
+  margin-top: -2px;
 }
 .poke-favorites-grid {
   display: grid;
@@ -43,11 +44,12 @@
 @media only screen and (min-width: 1200px) {
   .favorites-container {
     padding: 10px;
-    min-height: 89.8vh;
+    min-height: 91vh;
     padding: 50px;
   }
   .poke-favorites-grid {
     grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
   }
   .poke-fav-text {
     font-size: 40px;
@@ -75,9 +77,9 @@
 
 @media only screen and (min-width:481px) and (max-width:720px) {
   .favorites-container {
-    min-height: 90.7vh;
+    min-height: 90.9vh;
     margin: 0px;
-    padding: 0px;
+    padding: 10px;
     margin-top: -2px;
   }
   .poke-favorites-grid {
@@ -93,11 +95,17 @@
     font-weight: 900;
     height: 100%;
   }
+  .favorites-text {
+    font-size: 25px;
+    font-weight: 900;
+    margin-top: 100px;
+  }
 }
 
 @media only screen and (min-width:0px) and (max-width:480px) {
   .favorites-container {
-    min-height: 96vh;
+    width: 100vw;
+    min-height: 100vh;
   }
   .poke-favorites-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -105,9 +113,10 @@
   }
   .favorites-text {
     color: var(--text);
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 800;
-    gap: 4rem;
+    gap: 0rem;
+    margin-top: 50px;
   }
   .poke-fav-text {
     display: flex;
@@ -116,5 +125,6 @@
     font-size: 25px;
     font-weight: 900;
     height: 100%;
+    margin-top: 20px;
   }
 }

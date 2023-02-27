@@ -279,11 +279,12 @@
 
 @media only screen and (min-width:481px) and (max-width:720px) {
     .pokemon-container {
-        min-height: 92vh;
+        min-height: 80vh;
+        padding-top: 30px;
     } 
     .box-pokemon {
         width: 90%;
-        margin-top: 50px;
+        margin-bottom: 30px;
     }
     .box-center {
         display: grid;
@@ -291,7 +292,7 @@
         align-items: center;
     } 
     .pokemon-image {
-        width: 600px;
+        width: 500px;
         height: 500px;  
     }
     .poke-stats {
@@ -301,16 +302,16 @@
         grid-template-columns: repeat(2, 1fr);
         border-radius: 20px;
         padding: 5px;
+        margin-top: -10px;
     }
     .poke-stat {
         width: 100%;
         height: 25px;
         margin: 0px;
-        font-size: 20px;
+        font-size: 15px;
         font-weight: 700;
         border-radius: 0px;
         background: none;
-        background: yellowgreen;
     }
     .dates {
         display: grid;
@@ -321,6 +322,11 @@
     }
     .name-date {
         font-size: 20px;
+    }
+    .poke-info-date {
+        width: 80%;
+        font-size: 10px;
+        font-weight: 800;
     }
 }
 
